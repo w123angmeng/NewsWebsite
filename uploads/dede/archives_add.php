@@ -43,6 +43,12 @@ if($dopost != 'save')
     $channelid = $cInfos['id'];
     //获取文章最大id以确定当前权重
     $maxWright = $dsql->GetOne("SELECT COUNT(*) AS cc FROM #@__archives");
+	//1 文章 2 图片集 3 软件 6 商品
+	if($channelid !=1 && $channelid !=2 && $channelid !=3 && $channelid !=6)
+	{
+		include DedeInclude('templets/archives_add_new.htm');
+		exit();
+	}
     include DedeInclude('templets/archives_add.htm');
     exit();
 }

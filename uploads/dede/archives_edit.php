@@ -47,6 +47,12 @@ if($dopost!='save')
     $addRow = $dsql->GetOne("SELECT * FROM `$addtable` WHERE aid='$aid'");
     $channelid = $arcRow['channel'];
     $tags = GetTags($aid);
+	//1 文章 2 图片集 3 软件 6 商品
+	if($channelid !=1 && $channelid !=2 && $channelid !=3 && $channelid !=6)
+	{
+		include DedeInclude('templets/archives_edit_new.htm');
+		exit();
+	}
     include DedeInclude("templets/archives_edit.htm");
     exit();
 }
