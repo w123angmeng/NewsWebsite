@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="{{ config('app.locale') }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <title>HIS官网</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="./css/swiper.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/hisweb.css">
+        <script src="./js/jquery.min.js" type="application/javascript"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="./js/swiper.min.js" type="application/javascript"></script>
+
+        <!-- Styles -->
+
+    </head>
+    <body>
+        <!--网站logo部分-->
+        <div class="container logo">
+            <div class="row logo-part">
+                <div class="col-md-8 logo-left">
+                    <img class="media-object" data-src="holder.js/20x20" src="./images/logo.png" width="50px" height="50px" style="display: inline-block">
+                    <span class="logo-text">青岛圣林源老年病医院</span>
+                </div>
+                <div class="col-md-4 logo-right">
+                    <img class="media-object" src="./images/phone_white.png" width="40px" height="40px">
+                    <div class="phone-info">
+                        <p class="phone-text">24小时健康热线</p>
+                        <p class="phone-num">0532-1234567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--网站菜单导航栏部分-->
+        <div class="container nav-menus">
+            <div class="row menus-part">
+                <ul class="menus-list">
+                    <li class="menus-item"><a class="active" href="./index.html">主页</a></li>
+                    <li class="menus-item"><a href="./teamList.html">专家团队</a></li>
+                    <li class="menus-item"><a href="#">特色科室</a></li>
+                    <li class="menus-item"><a href="./newsList.html">医院动态</a></li>
+                    <li class="menus-item"><a href="#">体检中心</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--网站图片轮播图部分-->
+        <div class="container nav">
+            <div class="row" style="margin-left:0;">
+                <div class="swiper-container" style="height:auto">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/nav.png" width="100%" height="auto">
+                            <!--<div class="inner">
+                                <div id="mainTheme"><h1>Swiper</h1><span>3</span></div>
+                                <p data-swiper-parallax="-1500" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">开源、免费、强大的移动端触摸滑动插件</p>
+                                <div class="subbtn" data-swiper-parallax="-3000" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                    <a class="button" href="/demo/index.html">查看Swiper演示</a>  <a class="button" href="/api/index.html">查看API 文档</a>  <a class="button" href="http://bbs.swiper.com.cn" target="_blank">交流、分享Swiper</a>  <a class="button" href="http://swiper2.swiper.com.cn" target="_blank">回顾Swiper2</a></div>
+                                <div class="mainbtn" data-swiper-parallax="-4500" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                    <a href="/usage/index.html">开始使用 Swiper</a></div>
+                            </div>-->
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/nav.png" width="100%">
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/nav.png" width="100%">
+                        </div>
+                    </div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- 如果需要滚动条 -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--主页面部分-->
+        <div class="container main">
+            <div class="row guide-part">
+                <div class="col-md-4" style="text-align: left;">
+                    <div class="guide-item" style="background-color: #5f9889;">
+                        <div class="guide-item-container">
+                            <a href="">
+                                <img src="./images/search_icon.png" alt="" widht="110px" height="110px">
+                                <p class="guide-text">报告查询</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <div class="guide-item" style="background-color: #d59057;">
+                        <div class="guide-item-container">
+                            <a href="">
+                                <img src="./images/reg_icon.png" alt="" widht="110px" height="110px">
+                                <p class="guide-text">挂号指南</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="text-align: right;">
+                    <div class="guide-item" style="background-color: #a4adcc;">
+                        <div class="guide-item-container">
+                            <a href="./serviceGuide.html">
+                                <img src="./images/server_icon.png" alt="" widht="110px" height="110px">
+                                <p class="guide-text">服务指南</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row head-text">
+                <div class="little-rectangle">
+                </div>
+                <div class="head-info">
+                    <p class="head-name">专家团队</p>
+                    <p class="head-sub-name">Expert Team</p>
+                </div>
+                <a href="./teamList.html">
+                    <img src="./images/more.png" alt="">
+                </a>
+            </div>
+
+            <!--专家专题-->
+            <div class="row team-part">
+                <div class="col-md-4 team-img">
+                    <img src="./images/team-main.png" alt="">
+                    <div class="button-info teamList-button">
+                        <button class="btn btn-info">在线咨询</button>
+                        <button class="btn btn-success">挂号预约</button>
+                    </div>
+                </div>
+                <div class="col-md-5 team-info">
+                    <div class="teamList-head"><span class="teamList-name">王晓林</span>&nbsp;&nbsp;<span class="teamList-subname">副主任医师</span></div>
+                    <div class="teamList-tag">专家简介</div>
+                    <div class="teamList-goodat">
+                        湖南省医学会医疗事故技术鉴定专家库成员、长沙市医学会常务理事、长沙市医学会妇产科分会主委、长沙市医学会医疗事故技术鉴定专家库成员、国际妇产科联盟会员、长沙市孕产妇死亡评审专家组成员、中国药文化研究会现代医药委员会全国委员、美国国立医学研究中心访问学者
+                        &nbsp;&nbsp;<span class="newsList-more"><a href="./teamDetail.html">详细></a></span>
+                    </div>
+                    <div class="teamList-tag">擅长领域</div>
+                    <div class="teamList-goodat">湖南省医学会医疗事故技术鉴定专家库成员、长沙市医学会常务理事、长沙市医学会妇产科分会主委。</div>
+                </div>
+                <div class="col-md-3 team-list">
+                    <div class="expert-item" style="position: absolute;right:0;">
+                        <div class="expert-img">
+                            <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/expert_min.png" width="100%" height="100%">
+                        </div>
+                        <div class="expert-info">
+                            <p class="expert-name">Peter &nbsp;&nbsp;<span class="expert-position">主任医生</span></p>
+                            <p class="expert-subname">心脑血管专家</p>
+                        </div>
+                    </div>
+                    <div class="expert-item" style="position: absolute;right:0;top:237px;">
+                        <div class="expert-img">
+                            <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/expert_min.png" width="100%" height="100%">
+                        </div>
+                        <div class="expert-info">
+                            <p class="expert-name">Peter &nbsp;&nbsp;<span class="expert-position">主任医生</span></p>
+                            <p class="expert-subname">心脑血管专家</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--科室专题-->
+            <div class="row head-text">
+                <div class="little-rectangle">
+                </div>
+                <div class="head-info">
+                    <p class="head-name">特色科室</p>
+                    <p class="head-sub-name">Expert Team</p>
+                </div>
+                <a href="./newsList.html">
+                    <img src="./images/more.png" alt="">
+                </a>
+            </div>
+
+            <div class="row dept-part">
+                <div class="dept-item">
+                    <div class="dept-info" style="background-color: #5671bf;">
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-name">慢创修复中心</div>
+                    </div>
+                    <img src="./images/dept-01.png" alt="">
+                </div>
+                <div class="dept-item">
+                    <div class="dept-info" style="background-color: #55b38c;">
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-name">中医科</div>
+                    </div>
+                    <img src="./images/dept-02.png" alt="">
+                </div>
+                <div class="dept-item">
+                    <div class="dept-info" style="background-color: #cda850;">
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-name">康复科</div>
+                    </div>
+                    <img src="./images/dept-03.png" alt="">
+                </div>
+                <div class="dept-item">
+                    <div class="dept-info" style="background-color: #4bb2c1;">
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-name">重症康护科</div>
+                    </div>
+                    <img src="./images/dept-04.png" alt="">
+                </div>
+                <div class="dept-item" style="margin-right: 0;">
+                    <div class="dept-info" style="background-color: #815ba4;">
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-desc">针对面部修复</div>
+                        <div class="dept-name">老年病慢性病科</div>
+                    </div>
+                    <img src="./images/dept-05.png" alt="">
+                </div>
+
+            </div>
+            <div class="row head-text">
+                <div class="little-rectangle">
+                </div>
+                <div class="head-info">
+                    <p class="head-name">健康体检</p>
+                    <p class="head-sub-name">Expert Team</p>
+                </div>
+                <a href="./newsList.html">
+                    <img src="./images/more.png" alt="">
+                </a>
+            </div>
+            <!--
+            <div class="row goods-part">
+                <div class="col-md-4  goods-item">
+                    <div class="goods-img">
+                        <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/package_min.png" width="100%" height="100%">
+                    </div>
+                    <div class="goods-info">
+                        <p class="goods-name">体检套餐</p>
+                        <p>青岛圣林源医院 &nbsp;&nbsp;<span class="goods-price">￥2800</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4  goods-item">
+                    <div class="goods-img">
+                        <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/package_min.png" width="100%" height="100%">
+                    </div>
+                    <div class="goods-info">
+                        <p class="goods-name">体检套餐</p>
+                        <p>青岛圣林源医院 &nbsp;&nbsp;<span class="goods-price">￥2800</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4  goods-item">
+                    <div class="goods-img">
+                        <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/package_min.png" width="100%" height="100%">
+                    </div>
+                    <div class="goods-info">
+                        <p class="goods-name">体检套餐</p>
+                        <p>青岛圣林源医院 &nbsp;&nbsp;<span class="goods-price">￥2800</span></p>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <div class="row news-part">
+                <div class="col-md-6">
+                    <div class="row head-text head-text-min-left">
+                        <div class="little-rectangle">
+                        </div>
+                        <div class="head-info">
+                            <p class="head-name">医院动态</p>
+                            <p class="head-sub-name">Expert Team</p>
+                        </div>
+                        <a href="./newsList.html">
+                            <img src="./images/more.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row head-text head-text-min-right">
+                        <div class="little-rectangle">
+                        </div>
+                        <div class="head-info">
+                            <p class="head-name">医院公告</p>
+                            <p class="head-sub-name">Expert Team</p>
+                        </div>
+                        <a href="./noticeList.html">
+                            <img src="./images/more.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row news-part">
+                <div class="col-md-6 left-news">
+                    <div class="news-info">
+                        <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/notice_min.png" width="480px">
+                        <div class="news-list">
+                            <div class="news-item">
+                                <div class="col-md-8">
+                                    <span class="news-name">今日烟台有6-7级大风烟台大风预警</span>
+                                </div>
+                                <div class="col-md-4 news-date-container">
+                                    <span class="news-date">2017-3-13</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="col-md-8">
+                                    <span class="news-name">今日烟台有6-7级大风烟台大风预警</span>
+                                </div>
+                                <div class="col-md-4 news-date-container">
+                                    <span class="news-date">2017-3-13</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="col-md-8">
+                                    <span class="news-name">今日烟台有6-7级大风烟台大风预警</span>
+                                </div>
+                                <div class="col-md-4 news-date-container">
+                                    <span class="news-date">2017-3-13</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="col-md-8">
+                                    <span class="news-name">今日烟台有6-7级大风烟台大风预警</span>
+                                </div>
+                                <div class="col-md-4 news-date-container">
+                                    <span class="news-date">2017-3-13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 right-news">
+                    <div class="news-info">
+                        <img alt="logo" class="media-object" data-src="holder.js/20x20" src="./images/notice_min.png" width="480px">
+                        <div class="news-list">
+                            <div class="news-item">
+                                <div class="col-md-8">
+                                    <span class="news-name">今日烟台有6-7级大风烟台大风预警</span>
+                                </div>
+                                <div class="col-md-4 news-date-container">
+                                    <span class="news-date">2017-3-13</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="col-md-8">
+                                    <span class="news-name">今日烟台有6-7级大风烟台大风预警</span>
+                                </div>
+                                <div class="col-md-4 news-date-container">
+                                    <span class="news-date">2017-3-13</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="col-md-8">
+                                    <span class="news-name">今日烟台有6-7级大风烟台大风预警</span>
+                                </div>
+                                <div class="col-md-4 news-date-container">
+                                    <span class="news-date">2017-3-13</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="col-md-8">
+                                    <span class="news-name">今日烟台有6-7级大风烟台大风预警</span>
+                                </div>
+                                <div class="col-md-4 news-date-container">
+                                    <span class="news-date">2017-3-13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-content row">
+                <div class="col-md-5 row">
+                    <div class="col-md-6">
+                        <p class="row nav-header">便捷导航</p>
+                        <ul class="row nav-menu">
+                            <li><a href="">> 网站首页</a></li>
+                            <li><a href="">> 专家团队</a></li>
+                            <li><a href="">> 科室导航</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="row nav-header">&nbsp;</p>
+                        <ul class="row nav-menu">
+                            <li><a href="">> 医院动态</a></li>
+                            <li><a href="">> 健康体检</a></li>
+                            <li><a href="">> 医院公告</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <p class="row nav-header">联系我们</p>
+                    <ul class="row nav-company-info">
+                        <li><img src="./images/address.png" alt="">医院地址：青岛市城阳区艳阳路98路</li>
+                        <li><img src="./images/phone_black.png" alt="">电&nbsp;话：0532-12345678</li>
+                        <li><img src="./images/qq.png" alt="">网络门诊：66336955（QQ）</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 qrcode-part">
+                    <div class="qrcode-info">
+                        <img src="./images/qrcode.png" alt="" width="150px" height="150px">
+                        <p class="qrcode_text">微信扫一扫关注</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright row">版权所有 备案号 鲁ICP备16002267号-1 @copy 2016 sinomoses.com All Rights Reserved</div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var mySwiper = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+
+                    // 如果需要分页器
+                    pagination: '.swiper-pagination',
+
+                    // 如果需要前进后退按钮
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+
+                    // 如果需要滚动条
+                    scrollbar: '.swiper-scrollbar',
+                })
+            });
+        </script>
+    </body>
+</html>

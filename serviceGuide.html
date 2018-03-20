@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="{{ config('app.locale') }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <title>HIS官网</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="./css/swiper.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/hisweb.css">
+        <script src="./js/jquery.min.js" type="application/javascript"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="./js/swiper.min.js" type="application/javascript"></script>
+
+        <!-- 地图Styles -->
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+        <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+        <title>百度地图API自定义地图</title>
+        <!--引用百度地图API-->
+        <style type="text/css">
+            html,body{margin:0;padding:0;}
+            .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+            .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+        </style>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+    </head>
+    <body>
+        <!--网站logo部分-->
+        <div class="container logo">
+            <div class="row logo-part">
+                <div class="col-md-8 logo-left">
+                    <img class="media-object" data-src="holder.js/20x20" src="./images/logo.png" width="50px" height="50px" style="display: inline-block">
+                    <span class="logo-text">青岛圣林源老年病医院</span>
+                </div>
+                <div class="col-md-4 logo-right">
+                    <img class="media-object" src="./images/phone_white.png" width="40px" height="40px">
+                    <div class="phone-info">
+                        <p class="phone-text">24小时健康热线</p>
+                        <p class="phone-num">0532-1234567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--网站菜单导航栏部分-->
+        <div class="container nav-menus">
+            <div class="row menus-part">
+                <ul class="menus-list">
+                    <li class="menus-item"><a href="./index.html">主页</a></li>
+                    <li class="menus-item"><a class="active" href="./teamList.html">专家团队</a></li>
+                    <li class="menus-item"><a href="#">特色科室</a></li>
+                    <li class="menus-item"><a href="./newsList.html">医院动态</a></li>
+                    <li class="menus-item"><a href="#">体检中心</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--主页面部分-->
+        <div class="container main">
+            <div class="row address-notice"><img src="./images/address_min.png" alt="">&nbsp;&nbsp;您现在的位置：首页>服务指南</div>
+            <div class="row head-text">
+                <div class="little-rectangle">
+                </div>
+                <div class="head-info">
+                    <p class="head-name">医院简介</p>
+                    <p class="head-sub-name">Expert Team</p>
+                </div>
+            </div>
+            <div class="row hospital-intro">
+                <img src="./images/hospital_intro.png" alt="">
+                <!--悬浮层-->
+                <div class="hospital-top">
+                    <p>
+                        省内唯一所的二级甲等综合医院，是湘雅二医院定点指导医院，县医保、农村合作医疗、工伤、生育保险定点医院，集医疗、预防、保健、教学及科研于一体，是全县的医疗技术指导中心，设有医疗急救中心和天元司法鉴定所。医院占地80余亩，建筑面积46000m2，医疗区建筑面积32000m2。现有在职职工520余人。卫技人员420余人，高中级162人，开放病床400张，年门诊量15万人次，年收治住院病人1.5万余人次，手术4000台（次）。
+                    </p>
+                    <p>
+                        院内设有心血管内科、消化内科、神经内科、感染科、小儿科、普外科、骨外科、泌尿外科、妇产科、五官科、急救科、手术室、中医科等临床科室，建立了社区中心、微创中心、体检中心、高压氧治疗中心、血液净化中心、儿科重症监护中心、120急救中心，拥有救护车6台，分院前急救和院内急救，急救设备齐全，24小时快速接诊。心血管内科、普腹外科、妇产科是医院重点科室。
+                    </p>
+                </div>
+            </div>
+            <div class="row head-text">
+                <div class="little-rectangle">
+                </div>
+                <div class="head-info">
+                    <p class="head-name">自助咨询</p>
+                    <p class="head-sub-name">Expert Team</p>
+                </div>
+            </div>
+            <div class="row question-part">
+                <ul class="question-type">
+                    <li class="question-type-active"><a href="#">就诊信息问题</a></li>
+                    <li><a href="">医院费用问题</a></li>
+                    <li><a href="">医院介绍问题</a></li>
+                </ul>
+            </div>
+            <div class="row question-part">
+                <ul class="questionList">
+                    <li class="question-item">
+                        <div class="question-q"><div class="question-icon"></div><span class="question-icon-q">Q：</span>流行感冒挂什么科？</div>
+                        <div class="question-a"><span class="question-icon-a">A：</span>呼吸内科</div>
+                    </li>
+                    <li class="question-item">
+                        <div class="question-q"><div class="question-icon"></div><span class="question-icon-q">Q：</span>流行感冒挂什么科？</div>
+                    </li>
+                    <li class="question-item">
+                        <div class="question-q"><div class="question-icon"></div><span class="question-icon-q">Q：</span>流行感冒挂什么科？</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row head-text">
+                <div class="little-rectangle">
+                </div>
+                <div class="head-info">
+                    <p class="head-name">联系我们</p>
+                    <p class="head-sub-name">Expert Team</p>
+                </div>
+            </div>
+            <div class="row contact-us">
+                <div class="col-md-5">
+                    <p class="contact-us-header">青岛圣林源老年病医院</p>
+                    <p class="contact-us-info">
+                        地址：青岛市城阳区艳阳路98号</br>
+                        电话：0532-1234567</br>
+                        乘车路线：106，112，336，111，226</br>
+                        到XX路下车
+                    </p>
+                </div>
+                <div class="col-md-7 ditu-container">
+                    <div id="dituContent"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-content row">
+                <div class="col-md-5 row">
+                    <div class="col-md-6">
+                        <p class="row nav-header">便捷导航</p>
+                        <ul class="row nav-menu">
+                            <li><a href="">> 网站首页</a></li>
+                            <li><a href="">> 专家团队</a></li>
+                            <li><a href="">> 科室导航</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="row nav-header">&nbsp;</p>
+                        <ul class="row nav-menu">
+                            <li><a href="">> 医院动态</a></li>
+                            <li><a href="">> 健康体检</a></li>
+                            <li><a href="">> 医院公告</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <p class="row nav-header">联系我们</p>
+                    <ul class="row nav-company-info">
+                        <li><img src="./images/address.png" alt="">医院地址：青岛市城阳区艳阳路98路</li>
+                        <li><img src="./images/phone_black.png" alt="">电&nbsp;话：0532-12345678</li>
+                        <li><img src="./images/qq.png" alt="">网络门诊：66336955（QQ）</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 qrcode-part">
+                    <div class="qrcode-info">
+                        <img src="./images/qrcode.png" alt="" width="150px" height="150px">
+                        <p class="qrcode_text">微信扫一扫关注</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright row">版权所有 备案号 鲁ICP备16002267号-1 @copy 2016 sinomoses.com All Rights Reserved</div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var mySwiper = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+
+                    // 如果需要分页器
+                    pagination: '.swiper-pagination',
+
+                    // 如果需要前进后退按钮
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+
+                    // 如果需要滚动条
+                    scrollbar: '.swiper-scrollbar',
+                })
+            });
+        </script>
+    </body>
+    <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMarker();//向地图中添加marker
+        }
+
+        //创建地图函数：
+        function createMap(){
+            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+            var point = new BMap.Point(120.359837,36.303642);//定义一个中心点坐标
+            map.centerAndZoom(point,12);//设定地图的中心点和坐标并将地图显示在地图容器中
+            window.map = map;//将map变量存储在全局
+        }
+
+        //地图事件设置函数：
+        function setMapEvent(){
+            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+            map.enableKeyboard();//启用键盘上下左右键移动地图
+        }
+
+        //地图控件添加函数：
+        function addMapControl(){
+            //向地图中添加缩放控件
+            var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+            map.addControl(ctrl_nav);
+            //向地图中添加缩略图控件
+            var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+            map.addControl(ctrl_ove);
+            //向地图中添加比例尺控件
+            var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            map.addControl(ctrl_sca);
+        }
+
+        //标注点数组
+        var markerArr = [{title:"青岛圣林源老年病医院",content:"青岛圣林源老年病医院我的备注",point:"120.33569|36.316672",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+        ];
+        //创建marker
+        function addMarker(){
+            for(var i=0;i<markerArr.length;i++){
+                var json = markerArr[i];
+                var p0 = json.point.split("|")[0];
+                var p1 = json.point.split("|")[1];
+                var point = new BMap.Point(p0,p1);
+                var iconImg = createIcon(json.icon);
+                var marker = new BMap.Marker(point,{icon:iconImg});
+                var iw = createInfoWindow(i);
+                var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                marker.setLabel(label);
+                map.addOverlay(marker);
+                label.setStyle({
+                    borderColor:"#808080",
+                    color:"#333",
+                    cursor:"pointer"
+                });
+
+                (function(){
+                    var index = i;
+                    var _iw = createInfoWindow(i);
+                    var _marker = marker;
+                    _marker.addEventListener("click",function(){
+                        this.openInfoWindow(_iw);
+                    });
+                    _iw.addEventListener("open",function(){
+                        _marker.getLabel().hide();
+                    })
+                    _iw.addEventListener("close",function(){
+                        _marker.getLabel().show();
+                    })
+                    label.addEventListener("click",function(){
+                        _marker.openInfoWindow(_iw);
+                    })
+                    if(!!json.isOpen){
+                        label.hide();
+                        _marker.openInfoWindow(_iw);
+                    }
+                })()
+            }
+        }
+        //创建InfoWindow
+        function createInfoWindow(i){
+            var json = markerArr[i];
+            var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+            return iw;
+        }
+        //创建一个Icon
+        function createIcon(json){
+            var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+            return icon;
+        }
+
+        initMap();//创建和初始化地图
+    </script>
+</html>

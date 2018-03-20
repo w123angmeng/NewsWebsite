@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="{{ config('app.locale') }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <title>HIS官网</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="./css/swiper.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/hisweb.css">
+        <script src="./js/jquery.min.js" type="application/javascript"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="./js/swiper.min.js" type="application/javascript"></script>
+
+        <!-- Styles -->
+
+
+    </head>
+    <body>
+        <!--网站logo部分-->
+        <div class="container logo">
+            <div class="row logo-part">
+                <div class="col-md-8 logo-left">
+                    <img class="media-object" data-src="holder.js/20x20" src="./images/logo.png" width="50px" height="50px" style="display: inline-block">
+                    <span class="logo-text">青岛圣林源老年病医院</span>
+                </div>
+                <div class="col-md-4 logo-right">
+                    <img class="media-object" src="./images/phone_white.png" width="40px" height="40px">
+                    <div class="phone-info">
+                        <p class="phone-text">24小时健康热线</p>
+                        <p class="phone-num">0532-1234567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--网站菜单导航栏部分-->
+        <div class="container nav-menus">
+            <div class="row menus-part">
+                <ul class="menus-list">
+                    <li class="menus-item"><a href="./index.html">主页</a></li>
+                    <li class="menus-item"><a class="active" href="./teamList.html">专家团队</a></li>
+                    <li class="menus-item"><a href="#">特色科室</a></li>
+                    <li class="menus-item"><a href="./newsList.html">医院动态</a></li>
+                    <li class="menus-item"><a href="#">体检中心</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--主页面部分-->
+        <div class="container main">
+            <div class="row address-notice"><img src="./images/address_min.png" alt="">&nbsp;&nbsp;您现在的位置：首页>专家团队</div>
+            <div class="row head-text head-text-newsList">
+                <div class="little-rectangle">
+                </div>
+                <div class="head-info">
+                    <p class="head-name">专家团队</p>
+                    <p class="head-sub-name">Expert Team</p>
+                </div>
+            </div>
+            <div class="row teamList-part">
+                <div class="row teamList-item">
+                    <div class="col-md-5">
+                        <a href="./teamDetail.html">
+                            <img src="./images/expert_list.png" alt="点击查看专家详情">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="teamList-head"><span class="teamList-name">王晓林</span>&nbsp;&nbsp;<span class="teamList-subname">副主任医师</span></div>
+                        <div class="teamList-desc">
+                            <p>历任中国康复医学院秘书长</p>
+                            <p>北京历任中国康复医学院秘书长</p>
+                            <p>中国历任中国康复医学院秘书长</p>
+                        </div>
+                        <div class="teamList-tag">擅长领域</div>
+                        <div class="teamList-goodat">
+                            <span>骨关节疾病，重点研究骨头缺性坏死、骨头关节病的诊断,骨关节疾病，重点研究骨头缺性坏死、骨头关节病的诊断</span>
+                        </div>
+                        <div class="teamList-button">
+                            <button class="btn btn-info">在线咨询</button>
+                            <button class="btn btn-success">挂号预约</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row teamList-item">
+                    <div class="col-md-5">
+                        <a href="./teamDetail.html">
+                            <img src="./images/expert_list.png" alt="点击查看专家详情">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="teamList-head"><span class="teamList-name">王晓林</span>&nbsp;&nbsp;<span class="teamList-subname">副主任医师</span></div>
+                        <div class="teamList-desc">
+                            <p>历任中国康复医学院秘书长</p>
+                            <p>北京历任中国康复医学院秘书长</p>
+                            <p>中国历任中国康复医学院秘书长</p>
+                        </div>
+                        <div class="teamList-tag">擅长领域</div>
+                        <div class="teamList-goodat">
+                            <span>骨关节疾病，重点研究骨头缺性坏死、骨头关节病的诊断,骨关节疾病，重点研究骨头缺性坏死、骨头关节病的诊断</span>
+                        </div>
+                        <div class="teamList-button">
+                            <button class="btn btn-info">在线咨询</button>
+                            <button class="btn btn-success">挂号预约</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row teamList-item">
+                    <div class="col-md-5">
+                        <a href="./teamDetail.html">
+                            <img src="./images/expert_list.png" alt="点击查看专家详情">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="teamList-head"><span class="teamList-name">王晓林</span>&nbsp;&nbsp;<span class="teamList-subname">副主任医师</span></div>
+                        <div class="teamList-desc">
+                            <p>历任中国康复医学院秘书长</p>
+                            <p>北京历任中国康复医学院秘书长</p>
+                            <p>中国历任中国康复医学院秘书长</p>
+                        </div>
+                        <div class="teamList-tag">擅长领域</div>
+                        <div class="teamList-goodat">
+                            <span>骨关节疾病，重点研究骨头缺性坏死、骨头关节病的诊断,骨关节疾病，重点研究骨头缺性坏死、骨头关节病的诊断</span>
+                        </div>
+                        <div class="teamList-button">
+                            <button class="btn btn-info">在线咨询</button>
+                            <button class="btn btn-success">挂号预约</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-content row">
+                <div class="col-md-5 row">
+                    <div class="col-md-6">
+                        <p class="row nav-header">便捷导航</p>
+                        <ul class="row nav-menu">
+                            <li><a href="">> 网站首页</a></li>
+                            <li><a href="">> 专家团队</a></li>
+                            <li><a href="">> 科室导航</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="row nav-header">&nbsp;</p>
+                        <ul class="row nav-menu">
+                            <li><a href="">> 医院动态</a></li>
+                            <li><a href="">> 健康体检</a></li>
+                            <li><a href="">> 医院公告</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <p class="row nav-header">联系我们</p>
+                    <ul class="row nav-company-info">
+                        <li><img src="./images/address.png" alt="">医院地址：青岛市城阳区艳阳路98路</li>
+                        <li><img src="./images/phone_black.png" alt="">电&nbsp;话：0532-12345678</li>
+                        <li><img src="./images/qq.png" alt="">网络门诊：66336955（QQ）</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 qrcode-part">
+                    <div class="qrcode-info">
+                        <img src="./images/qrcode.png" alt="" width="150px" height="150px">
+                        <p class="qrcode_text">微信扫一扫关注</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright row">版权所有 备案号 鲁ICP备16002267号-1 @copy 2016 sinomoses.com All Rights Reserved</div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var mySwiper = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+
+                    // 如果需要分页器
+                    pagination: '.swiper-pagination',
+
+                    // 如果需要前进后退按钮
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+
+                    // 如果需要滚动条
+                    scrollbar: '.swiper-scrollbar',
+                })
+            });
+        </script>
+    </body>
+</html>
