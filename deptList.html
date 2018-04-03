@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ config('app.locale') }}" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,89 +55,203 @@
             <div class="row menus-part">
                 <ul class="menus-list">
                     <li class="menus-item"><a href="./index.html">首页</a></li>
-                    <li class="menus-item"><a class="active" href="./teamList.html">专家团队</a></li>
-                    <li class="menus-item"><a href="./deptList.html">科室导航</a></li>
+                    <li class="menus-item"><a href="./teamList.html">专家团队</a></li>
+                    <li class="menus-item"><a class="active" href="./deptList.html">科室导航</a></li>
                     <li class="menus-item"><a href="./newsList.html">医院动态</a></li>
                     <li class="menus-item"><a href="#">体检中心</a></li>
                 </ul>
             </div>
         </div>
 
+        <style>
+            /*科室列表-科室列表样式*/
+            .departmentList-part{
+                width: 1000px;
+                margin:0 auto;
+            }
+            .departmentList-part *{
+                margin:0;
+                padding:0;
+            }
+            .department-tab{
+                list-style: none;
+                height:48px;
+                line-height: 48px;
+                border-bottom:1px solid #007e5c;
+            }
+            ul.department-tab *{
+                padding:0;
+                margin:0;
+            }
+            ul.department-tab>li.department-tab-li{
+                display:inline-block;
+                width:188px;
+                height:48px;
+                background-color: #85b4a5;
+                color:#FFFFFF;
+                font-size: 18px;
+                text-align: center;
+                border-top-left-radius:5px;
+                border-top-right-radius:5px;
+                margin-right:8px;
+            }
+            ul.department-tab>li.active{
+                background-color: #FFFFFF;
+                color: #333333;
+                border:1px solid #007e5c;
+                border-bottom: none;
+            }
+            .teamList-tag-content{
+                margin:30px 0 58px;
+                line-height: 48px;
+                font-size: 18px;
+                color:#333333;
+            }
+            .teamList-tag-item{
+                width:140px;
+                height:48px;
+                display:inline-block;
+                line-height: 48px;
+                border-radius: 5px;
+                border:1px solid #DBDBDB;
+                margin-right:10px;
+                text-align: center;
+            }
+            .department-content{
+                color:#333333;
+                font-size: 16px;
+                line-height: 32px;
+                text-indent: 30px;
+            }
+            .department-content img{
+                float: left;
+                padding-right:20px;
+            }
+            .department-content p{
+
+            }
+            .department-title{
+                font-size: 24px;
+                line-height: 48px;
+            }
+            .departmentList-detail{
+                border:1px solid #007e5c;
+                border-top:none;
+                padding:50px 20px 0;
+            }
+            /*科室列表-科室下的专家列表样式*/
+            .departmentExpert-part{
+                width: 1000px;
+                margin:40px auto;
+            }
+            .departmentExpert-part .button-info{
+                text-align: center;
+            }
+            .departmentExpert-item{
+                width: 300px;
+                background-color: #FFFFFF;
+                padding:10px;
+                box-shadow:0 0 10px #dbdbdb;
+                -moz-box-shadow:0 0 10px #dbdbdb;
+                -o-box-shadow:0 0 10px #dbdbdb;
+                -webkit-box-shadow:0 0 10px #dbdbdb;
+                text-align: center;
+            }
+            .departmentExpert-item a{
+                text-decoration: none;
+            }
+            .departmentExpert-info{
+                background-color: #ededed;
+                color:#666666;
+                font-size: 16px;
+                line-height: 30px;
+            }
+            .departmentExpert-name,.departmentExpert-subName{
+                color:#333333;
+                font-size: 22px;
+            }
+        </style>
         <!--主页面部分-->
         <div class="container main">
-            <div class="row address-notice"><img src="./images/address_min.png" alt="">&nbsp;&nbsp;您现在的位置：首页>服务指南</div>
-            <div class="row head-text">
-                <div class="little-rectangle">
-                </div>
-                <div class="head-info">
-                    <p class="head-name">医院简介</p>
-                    <p class="head-sub-name">Expert Team</p>
-                </div>
-            </div>
-            <div class="row hospital-intro">
-                <img src="./images/hospital_intro.png" alt="">
-                <!--悬浮层-->
-                <div class="hospital-top">
-                    <p>
-                        省内唯一所的二级甲等综合医院，是湘雅二医院定点指导医院，县医保、农村合作医疗、工伤、生育保险定点医院，集医疗、预防、保健、教学及科研于一体，是全县的医疗技术指导中心，设有医疗急救中心和天元司法鉴定所。医院占地80余亩，建筑面积46000m2，医疗区建筑面积32000m2。现有在职职工520余人。卫技人员420余人，高中级162人，开放病床400张，年门诊量15万人次，年收治住院病人1.5万余人次，手术4000台（次）。
-                    </p>
-                    <p>
-                        院内设有心血管内科、消化内科、神经内科、感染科、小儿科、普外科、骨外科、泌尿外科、妇产科、五官科、急救科、手术室、中医科等临床科室，建立了社区中心、微创中心、体检中心、高压氧治疗中心、血液净化中心、儿科重症监护中心、120急救中心，拥有救护车6台，分院前急救和院内急救，急救设备齐全，24小时快速接诊。心血管内科、普腹外科、妇产科是医院重点科室。
-                    </p>
-                </div>
-            </div>
-            <div class="row head-text">
-                <div class="little-rectangle">
-                </div>
-                <div class="head-info">
-                    <p class="head-name">自助咨询</p>
-                    <p class="head-sub-name">Expert Team</p>
-                </div>
-            </div>
-            <div class="row question-part">
-                <ul class="question-type">
-                    <li class="question-type-active"><a href="#">就诊信息问题</a></li>
-                    <li><a href="">医院费用问题</a></li>
-                    <li><a href="">医院介绍问题</a></li>
+            <div class="row address-notice"><img src="./images/address_min.png" alt="">&nbsp;&nbsp;您现在的位置：首页>科室导航</div>
+            <div class="row departmentList-part">
+                <ul class="department-tab">
+                    <li class="department-tab-li active">慢创修复中心</li>
+                    <li class="department-tab-li">中医科</li>
+                    <li class="department-tab-li">康复科</li>
+                    <li class="department-tab-li">重症康护科</li>
+                    <li class="department-tab-li">老年病慢性病科</li>
                 </ul>
-            </div>
-            <div class="row question-part">
-                <ul class="questionList">
-                    <li class="question-item">
-                        <div class="question-q"><div class="question-icon"></div><span class="question-icon-q">Q：</span>流行感冒挂什么科？</div>
-                        <div class="question-a"><span class="question-icon-a">A：</span>呼吸内科</div>
-                    </li>
-                    <li class="question-item">
-                        <div class="question-q"><div class="question-icon"></div><span class="question-icon-q">Q：</span>流行感冒挂什么科？</div>
-                    </li>
-                    <li class="question-item">
-                        <div class="question-q"><div class="question-icon"></div><span class="question-icon-q">Q：</span>流行感冒挂什么科？</div>
-                    </li>
-                </ul>
+                <div class="departmentList-detail">
+                    <div class="department-content">
+                        <img src="./images/news_detail.png" alt="">
+                        <p class="department-title">科室简介</p>
+                        <p>武警总医院耳鼻咽喉头颈外科组建于1985年，在武警各级领导的关怀下，不断发展壮大，现已经形成具有一定规模和专科医疗特色的医教研全面发展的科室。现有床位90张，医护人员69名，其中主任医师、教授4名，副主任医师5名，主治医师4名，医师8名，技师7名，护理人员40名。其中博士4名，硕士3名。</p>
+                        <p>能开展纯音测听、中耳分析、听诱发电位、全自动化耳石诊断与复位、视频眼震图、耳声发射、重心平衡功能、鼻窥镜、耳窥镜、频闪喉镜、电子鼻咽喉镜、纤维喉镜等各项专科检查，并具有先进的手术设备。具有良好的门诊就诊环境和独立的专科病房。</p>
+                        <p>能开展各种中耳手术治疗各种慢性中耳炎和重建听力；突发性耳聋及其它耳聋的诊断和治疗；眩晕性疾病的诊断和治疗；人工电子耳蜗移植；功能性鼻内窥镜手术治疗鼻炎、鼻窦炎、鼻息肉和鼻腔鼻窦良性肿瘤；鼾症的监测和手术治疗；咽部及咽旁的肿瘤切除，鼻咽部巨大肿瘤切除；支撑喉内镜显示系统下的喉部微创及激光手术；声音改进性手术；各种类型的喉癌手术，晚期喉癌术后仍能讲话；内淋巴囊减压术和迷路化学切除治疗梅尼埃病；头颈部重大外科手术：如晚期喉癌的联合根治手术、上颌窦癌的上颌骨切除及鼻腔鼻窦其它巨大肿瘤切除术、甲状腺良性恶性肿瘤切除及根治术、腮腺肿瘤切除面神经解剖术，下咽癌及颈段食管癌切除胃代食管术、头颈部巨大肿瘤切除术、前颅底侧颅底内镜下微创手术、颅颌面联合手术等；头颈部重大手术缺损的一期修复；耳鼻咽喉头颈部疑难病症的研究和治疗。科室设有耳聋、耳鸣治疗中心、鼾症睡眠监测中心。科室在头颈部重大手术、支撑喉内镜喉部微创手术、鼾症的手术治疗、眩晕性疾病的研究均达国内领先或先进水平。</p>　　
+                    </div>
+                    <div class="teamList-tag">诊疗范围</div>
+                    <div class="teamList-tag-content">
+                        <div class="teamList-tag-item">糖尿病足</div>
+                        <div class="teamList-tag-item">糖尿病足</div>
+                        <div class="teamList-tag-item">糖尿病足</div>
+                        <div class="teamList-tag-item">糖尿病足</div>
+                        <div class="teamList-tag-item">糖尿病足</div>
+                    </div>
+                </div>
             </div>
             <div class="row head-text">
                 <div class="little-rectangle">
                 </div>
                 <div class="head-info">
-                    <p class="head-name">联系我们</p>
+                    <p class="head-name">专家预约</p>
                     <p class="head-sub-name">Expert Team</p>
                 </div>
             </div>
-            <div class="row contact-us">
-                <div class="col-md-5">
-                    <p class="contact-us-header">青岛圣林源老年病医院</p>
-                    <p class="contact-us-info">
-                        <span class="contact-us-tag">地&ensp;&ensp;&ensp;&ensp;址：</span>青岛市城阳区艳阳路98号</br>
-                        <span class="contact-us-tag">电&ensp;&ensp;&ensp;&ensp;话：</span>0532-1234567</br>
-                        <span class="contact-us-tag">乘车路线：</span>106，112，336，111，226</br>
-                        到XX路下车
-                    </p>
-
+            <div class="row departmentExpert-part">
+                <div class="col-md-4">
+                    <div class="departmentExpert-item">
+                        <a href="./teamDetail.html">
+                            <img src="./images/dept_expert_list.png" alt="" width="100%" height="100%">
+                            <div class="departmentExpert-info">
+                                <span class="departmentExpert-name">王晓林</span><span class="departmentExpert-subName">副主任医师</span></br>
+                                <span class="departmentExpert-desc">擅长：骨关节疾病、重点研究股骨头</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="button-info teamList-button">
+                        <button class="btn btn-info">在线咨询</button>
+                        <button class="btn btn-success">挂号预约</button>
+                    </div>
                 </div>
-                <div class="col-md-7 ditu-container">
-                    <div id="dituContent"></div>
+                <div class="col-md-4">
+                    <div class="departmentExpert-item">
+                        <img src="./images/dept_expert_list.png" alt="" width="100%" height="100%">
+                        <div class="departmentExpert-info">
+                            <span class="departmentExpert-name">王晓林</span><span class="departmentExpert-subName">副主任医师</span></br>
+                            <span class="departmentExpert-desc">擅长：骨关节疾病、重点研究股骨头</span>
+                        </div>
+                    </div>
+                    <div class="button-info teamList-button">
+                        <button class="btn btn-info">在线咨询</button>
+                        <button class="btn btn-success">挂号预约</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="departmentExpert-item">
+                        <img src="./images/dept_expert_list.png" alt="" width="100%" height="100%">
+                        <div class="departmentExpert-info">
+                            <span class="departmentExpert-name">王晓林</span><span class="departmentExpert-subName">副主任医师</span></br>
+                            <span class="departmentExpert-desc">擅长：骨关节疾病、重点研究股骨头</span>
+                        </div>
+                    </div>
+                    <div class="button-info teamList-button">
+                        <button class="btn btn-info">在线咨询</button>
+                        <button class="btn btn-success">挂号预约</button>
+                    </div>
                 </div>
             </div>
+            
         </div>
 
         <div class="container footer">
